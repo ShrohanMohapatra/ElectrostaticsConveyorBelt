@@ -1,0 +1,358 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     14301,        350]
+NotebookOptionsPosition[     12663,        317]
+NotebookOutlinePosition[     13022,        333]
+CellTagsIndexPosition[     12979,        330]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Block", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"k", ",", "M", ",", "\[Epsilon]"}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"For", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"k", "=", "1"}], ",", 
+     RowBox[{"k", "\[LessEqual]", "10"}], ",", 
+     RowBox[{"k", "++"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"M", "=", 
+       RowBox[{"RandomInteger", "[", 
+        RowBox[{"{", 
+         RowBox[{"4", ",", "6"}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+      
+      RowBox[{"\[Epsilon]", "=", 
+       RowBox[{
+        RowBox[{"RandomReal", "[", "]"}], "*", 
+        RowBox[{"10", "^", 
+         RowBox[{"(", 
+          RowBox[{"-", "2"}], ")"}]}]}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"Print", "[", 
+       RowBox[{
+       "\"\<M = \>\"", ",", "M", ",", "\"\< \[Epsilon] = \>\"", ",", 
+        "\[Epsilon]", ",", "\"\< integral value = \>\"", ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"NIntegrate", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"2", " ", "\[Epsilon]"}], ")"}], "^", "m"}], "/", "2"}],
+            " ", 
+           RowBox[{"Gamma", "[", "m", "]"}]}], ",", 
+          RowBox[{"{", 
+           RowBox[{"m", ",", "2", ",", 
+            RowBox[{"10", "^", "M"}]}], "}"}]}], "]"}]}], "]"}]}]}], 
+    "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.8201685810349817`*^9, 3.8201687202538548`*^9}, 
+   3.820169992472054*^9, {3.820170347572448*^9, 3.820170350439859*^9}, {
+   3.8201704426490602`*^9, 3.820170453075533*^9}, {3.820170529128399*^9, 
+   3.8201705946727552`*^9}, {3.8201707025335407`*^9, 
+   3.820170856659794*^9}},ExpressionUUID->"c0bbe6ff-f24a-4ceb-afa0-\
+b452a51527de"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"M = \"\>", "\[InvisibleSpace]", "5", 
+   "\[InvisibleSpace]", "\<\" \[Epsilon] = \"\>", "\[InvisibleSpace]", 
+   "0.0008448963046048541`", 
+   "\[InvisibleSpace]", "\<\" integral value = \"\>", "\[InvisibleSpace]", 
+   "6.031134995586344782091483342678371515668187`15.954589770191005*^179350"}],
+  SequenceForm[
+  "M = ", 5, " \[Epsilon] = ", 0.0008448963046048541, " integral value = ", 
+   6.031134995586344782091483342678371515668187`15.954589770191005*^179350],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.820170595291045*^9, {3.8201707075866003`*^9, 3.8201707336452217`*^9}, {
+   3.820170799951494*^9, 
+   3.8201709102218943`*^9}},ExpressionUUID->"4a1533fb-2a85-4fe5-9708-\
+0c60d130374b"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"M = \"\>", "\[InvisibleSpace]", "6", 
+   "\[InvisibleSpace]", "\<\" \[Epsilon] = \"\>", "\[InvisibleSpace]", 
+   "0.007018661337011876`", "\[InvisibleSpace]", "\<\" integral value = \"\>",
+    "\[InvisibleSpace]", 
+   "8.3037052221900945478846023613605587575`15.954589770191005*^3712985"}],
+  SequenceForm[
+  "M = ", 6, " \[Epsilon] = ", 0.007018661337011876, " integral value = ", 
+   8.3037052221900945478846023613605587575`15.954589770191005*^3712985],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.820170595291045*^9, {3.8201707075866003`*^9, 3.8201707336452217`*^9}, {
+   3.820170799951494*^9, 
+   3.8201709104480124`*^9}},ExpressionUUID->"0ffedbe3-98d2-4043-b14a-\
+9c7cdecbe11d"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"M = \"\>", "\[InvisibleSpace]", "5", 
+   "\[InvisibleSpace]", "\<\" \[Epsilon] = \"\>", "\[InvisibleSpace]", 
+   "0.005582330765385873`", "\[InvisibleSpace]", "\<\" integral value = \"\>",
+    "\[InvisibleSpace]", 
+   "7.2411914477018935233311350124`15.954589770191005*^261351"}],
+  SequenceForm[
+  "M = ", 5, " \[Epsilon] = ", 0.005582330765385873, " integral value = ", 
+   7.2411914477018935233311350124`15.954589770191005*^261351],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.820170595291045*^9, {3.8201707075866003`*^9, 3.8201707336452217`*^9}, {
+   3.820170799951494*^9, 
+   3.820170910475438*^9}},ExpressionUUID->"b7658a00-8902-4394-abab-\
+003a3a7229de"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"M = \"\>", "\[InvisibleSpace]", "5", 
+   "\[InvisibleSpace]", "\<\" \[Epsilon] = \"\>", "\[InvisibleSpace]", 
+   "0.004704406796788678`", "\[InvisibleSpace]", "\<\" integral value = \"\>",
+    "\[InvisibleSpace]", 
+   "6.3215530393502822329672320550889221`15.954589770191005*^253920"}],
+  SequenceForm[
+  "M = ", 5, " \[Epsilon] = ", 0.004704406796788678, " integral value = ", 
+   6.3215530393502822329672320550889221`15.954589770191005*^253920],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.820170595291045*^9, {3.8201707075866003`*^9, 3.8201707336452217`*^9}, {
+   3.820170799951494*^9, 
+   3.820170910524809*^9}},ExpressionUUID->"b6495157-e1a6-4eb5-a651-\
+44fcf584358e"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"M = \"\>", "\[InvisibleSpace]", "5", 
+   "\[InvisibleSpace]", "\<\" \[Epsilon] = \"\>", "\[InvisibleSpace]", 
+   "0.0030730250234068924`", 
+   "\[InvisibleSpace]", "\<\" integral value = \"\>", "\[InvisibleSpace]", 
+   "8.94345352549314512731571520669093439`15.954589770191005*^235426"}],
+  SequenceForm[
+  "M = ", 5, " \[Epsilon] = ", 0.0030730250234068924`, " integral value = ", 
+   8.94345352549314512731571520669093439`15.954589770191005*^235426],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.820170595291045*^9, {3.8201707075866003`*^9, 3.8201707336452217`*^9}, {
+   3.820170799951494*^9, 
+   3.82017091054045*^9}},ExpressionUUID->"5b658c26-dc7d-4469-b004-\
+43107560b879"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"M = \"\>", "\[InvisibleSpace]", "6", 
+   "\[InvisibleSpace]", "\<\" \[Epsilon] = \"\>", "\[InvisibleSpace]", 
+   "0.002680199209573959`", "\[InvisibleSpace]", "\<\" integral value = \"\>",
+    "\[InvisibleSpace]", 
+   "5.659343460992827173311744596165978790881`15.954589770191005*^3294898"}],
+  SequenceForm[
+  "M = ", 6, " \[Epsilon] = ", 0.002680199209573959, " integral value = ", 
+   5.659343460992827173311744596165978790881`15.954589770191005*^3294898],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.820170595291045*^9, {3.8201707075866003`*^9, 3.8201707336452217`*^9}, {
+   3.820170799951494*^9, 
+   3.820170910805829*^9}},ExpressionUUID->"51a37079-e9cd-4aea-bbb1-\
+1c7e75313e19"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"M = \"\>", "\[InvisibleSpace]", "6", 
+   "\[InvisibleSpace]", "\<\" \[Epsilon] = \"\>", "\[InvisibleSpace]", 
+   "0.0042742330722323005`", 
+   "\[InvisibleSpace]", "\<\" integral value = \"\>", "\[InvisibleSpace]", 
+   "7.1677574065544738389637004573317397`15.954589770191005*^3497589"}],
+  SequenceForm[
+  "M = ", 6, " \[Epsilon] = ", 0.0042742330722323005`, " integral value = ", 
+   7.1677574065544738389637004573317397`15.954589770191005*^3497589],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.820170595291045*^9, {3.8201707075866003`*^9, 3.8201707336452217`*^9}, {
+   3.820170799951494*^9, 
+   3.820170911043276*^9}},ExpressionUUID->"7c22a709-f558-4218-8165-\
+28f8f84aba6c"]
+}, Open  ]],
+
+Cell[BoxData[
+ TemplateBox[{
+  "NIntegrate","ncvb",
+   "\"NIntegrate failed to converge to prescribed accuracy after \
+\\!\\(\\*RowBox[{\\\"9\\\"}]\\) recursive bisections in \
+\\!\\(\\*RowBox[{\\\"m\\\"}]\\) near \\!\\(\\*RowBox[{\\\"{\\\", \\\"m\\\", \
+\\\"}\\\"}]\\) = \\!\\(\\*RowBox[{\\\"{\\\", \
+\\\"99998.201317347228104903678058690275065600872039794921875`65.954589770191\
+\\\", \\\"}\\\"}]\\). NIntegrate obtained \
+\\!\\(\\*RowBox[{\\\"8.\
+30830207059739988359027265549755310545610561188524310878747043313`65.\
+954589770191*^283224\\\"}]\\) and \
+\\!\\(\\*RowBox[{\\\"9.\
+9877930660623474979141536282619003660417036522932325603744961937`65.\
+954589770191*^283218\\\"}]\\) for the integral and error estimates.\"",2,14,
+   10,22956782837225153510,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.820170911100299*^9},ExpressionUUID->"fe543edf-15d6-4c11-8ac5-\
+2822490381ec"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"M = \"\>", "\[InvisibleSpace]", "5", 
+   "\[InvisibleSpace]", "\<\" \[Epsilon] = \"\>", "\[InvisibleSpace]", 
+   "0.009237330105075004`", "\[InvisibleSpace]", "\<\" integral value = \"\>",
+    "\[InvisibleSpace]", 
+   "8.3083020705973998835902726554975531`15.954589770191005*^283224"}],
+  SequenceForm[
+  "M = ", 5, " \[Epsilon] = ", 0.009237330105075004, " integral value = ", 
+   8.3083020705973998835902726554975531`15.954589770191005*^283224],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.820170595291045*^9, {3.8201707075866003`*^9, 3.8201707336452217`*^9}, {
+   3.820170799951494*^9, 
+   3.820170911106573*^9}},ExpressionUUID->"c29adbd3-97ac-45ff-8687-\
+8b82db955470"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"M = \"\>", "\[InvisibleSpace]", "5", 
+   "\[InvisibleSpace]", "\<\" \[Epsilon] = \"\>", "\[InvisibleSpace]", 
+   "0.0012143162672233144`", 
+   "\[InvisibleSpace]", "\<\" integral value = \"\>", "\[InvisibleSpace]", 
+   "3.89907964425825805496318378635118556`15.954589770191005*^195103"}],
+  SequenceForm[
+  "M = ", 5, " \[Epsilon] = ", 0.0012143162672233144`, " integral value = ", 
+   3.89907964425825805496318378635118556`15.954589770191005*^195103],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.820170595291045*^9, {3.8201707075866003`*^9, 3.8201707336452217`*^9}, {
+   3.820170799951494*^9, 
+   3.820170911112499*^9}},ExpressionUUID->"89d9ee9c-8c19-4c0b-9a3f-\
+91a8034f7867"]
+}, Open  ]],
+
+Cell[BoxData[
+ TemplateBox[{
+  "NIntegrate","ncvb",
+   "\"NIntegrate failed to converge to prescribed accuracy after \
+\\!\\(\\*RowBox[{\\\"9\\\"}]\\) recursive bisections in \
+\\!\\(\\*RowBox[{\\\"m\\\"}]\\) near \\!\\(\\*RowBox[{\\\"{\\\", \\\"m\\\", \
+\\\"}\\\"}]\\) = \\!\\(\\*RowBox[{\\\"{\\\", \
+\\\"99998.201317347228104903678058690275065600872039794921875`65.954589770191\
+\\\", \\\"}\\\"}]\\). NIntegrate obtained \
+\\!\\(\\*RowBox[{\\\"1.\
+13631043656743835590332871156207958703285052178993642108699001274`65.\
+954589770191*^282479\\\"}]\\) and \
+\\!\\(\\*RowBox[{\\\"1.\
+37121910442111821866218569750379934611190180586508382250985928087`65.\
+954589770191*^282473\\\"}]\\) for the integral and error estimates.\"",2,14,
+   11,22956782837225153510,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.820170911165823*^9},ExpressionUUID->"dbf2ab59-a533-4b05-b877-\
+e79e83367af7"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"M = \"\>", "\[InvisibleSpace]", "5", 
+   "\[InvisibleSpace]", "\<\" \[Epsilon] = \"\>", "\[InvisibleSpace]", 
+   "0.009080041088272624`", "\[InvisibleSpace]", "\<\" integral value = \"\>",
+    "\[InvisibleSpace]", 
+   "1.1363104365674383559033287115620795870329`15.954589770191005*^282479"}],
+  SequenceForm[
+  "M = ", 5, " \[Epsilon] = ", 0.009080041088272624, " integral value = ", 
+   1.1363104365674383559033287115620795870329`15.954589770191005*^282479],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.820170595291045*^9, {3.8201707075866003`*^9, 3.8201707336452217`*^9}, {
+   3.820170799951494*^9, 
+   3.8201709111725607`*^9}},ExpressionUUID->"c96b8c20-f961-44df-ae3d-\
+aac2b0616436"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"(*", " ", 
+  RowBox[{
+   RowBox[{
+   "Maybe", " ", "yes", " ", "the", " ", "integral", " ", "is", " ", 
+    "divergent"}], ",", " ", 
+   RowBox[{"then", " ", "definitely", " ", "the", " ", "series", " ", 
+    RowBox[{"Sum", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"-", "1"}], ")"}], "^", "m"}], " ", 
+       RowBox[{"\[Epsilon]", "^", "m"}], " ", 
+       RowBox[{"2", "^", 
+        RowBox[{"(", 
+         RowBox[{"m", "-", "1"}], ")"}]}], 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"m", "-", "1"}], ")"}], "!"}], " ", 
+       RowBox[{"Cos", "[", 
+        RowBox[{"4", " ", "m", " ", "\[Theta]"}], "]"}]}], ",", 
+      RowBox[{"{", 
+       RowBox[{"m", ",", "2"}], "}"}]}], "]"}]}]}], " ", "*)"}]], "Input",
+ CellChangeTimes->{{3.820170602528761*^9, 
+  3.82017068206719*^9}},ExpressionUUID->"e94503d2-b94c-4a04-88e6-\
+74de4d541bc6"]
+},
+WindowSize->{808, 571},
+WindowMargins->{{Automatic, 41}, {39, Automatic}},
+FrontEndVersion->"11.2 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+10, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1847, 46, 220, "Input",ExpressionUUID->"c0bbe6ff-f24a-4ceb-afa0-b452a51527de"],
+Cell[CellGroupData[{
+Cell[2452, 72, 752, 15, 25, "Print",ExpressionUUID->"4a1533fb-2a85-4fe5-9708-0c60d130374b"],
+Cell[3207, 89, 742, 15, 25, "Print",ExpressionUUID->"0ffedbe3-98d2-4043-b14a-9c7cdecbe11d"],
+Cell[3952, 106, 720, 15, 25, "Print",ExpressionUUID->"b7658a00-8902-4394-abab-003a3a7229de"],
+Cell[4675, 123, 732, 15, 25, "Print",ExpressionUUID->"b6495157-e1a6-4eb5-a651-44fcf584358e"],
+Cell[5410, 140, 736, 15, 25, "Print",ExpressionUUID->"5b658c26-dc7d-4469-b004-43107560b879"],
+Cell[6149, 157, 744, 15, 25, "Print",ExpressionUUID->"51a37079-e9cd-4aea-bbb1-1c7e75313e19"],
+Cell[6896, 174, 737, 15, 25, "Print",ExpressionUUID->"7c22a709-f558-4218-8165-28f8f84aba6c"]
+}, Open  ]],
+Cell[7648, 192, 908, 19, 93, "Message",ExpressionUUID->"fe543edf-15d6-4c11-8ac5-2822490381ec"],
+Cell[CellGroupData[{
+Cell[8581, 215, 732, 15, 25, "Print",ExpressionUUID->"c29adbd3-97ac-45ff-8687-8b82db955470"],
+Cell[9316, 232, 737, 15, 25, "Print",ExpressionUUID->"89d9ee9c-8c19-4c0b-9a3f-91a8034f7867"]
+}, Open  ]],
+Cell[10068, 250, 909, 19, 93, "Message",ExpressionUUID->"dbf2ab59-a533-4b05-b877-e79e83367af7"],
+Cell[10980, 271, 746, 15, 25, "Print",ExpressionUUID->"c96b8c20-f961-44df-ae3d-aac2b0616436"]
+}, Open  ]],
+Cell[11741, 289, 918, 26, 52, "Input",ExpressionUUID->"e94503d2-b94c-4a04-88e6-74de4d541bc6"]
+}
+]
+*)
+
